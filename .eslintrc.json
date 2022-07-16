@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "globals": {
+        "document": false,
+        "window": false
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "semi": ["error", "always"],
+        "camelcase": [0, { "properties": "never" }],
+        "handle-callback-err": ["error", "never"],
+        "jsx-quotes": ["error", "prefer-single"],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": [0],
+        "react/jsx-tag-spacing": [0],
+        "react/jsx-curly-spacing": [0, { "when": "always" }]
+    }
+}
